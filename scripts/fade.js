@@ -1,7 +1,5 @@
 function fadeout(audioId) {
-	var sound = document.getElementById(audioId);
-	//get just the array index number of the audio player in question
-	var idNum = (audioId.substr(5)-1);
+	var sound = document.getElementById('sound'+audioId);
 	
 	var fadeAudio = setInterval(function () {
 
@@ -16,7 +14,7 @@ function fadeout(audioId) {
 			//pause the playback
 			sound.pause();
 			//set the volume back to its predetermined value
-			sound.volume = sounds[idNum][5];
+			sound.volume = sounds[audioId][4];
 			//discontinue the intervalling
 			clearInterval(fadeAudio);
 		}
