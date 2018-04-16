@@ -25,7 +25,7 @@ function create_table() {
 						audio.id = 'sound'+r;
 						audio.controls = 'controls';
 						audio.preload = 'auto';
-						audio.setAttribute('onvolumechange', 'document.getElementById("sound'+r+'vol").innerHTML = volume.toFixed(2)');
+						audio.setAttribute('onvolumechange', 'document.getElementById("sound'+r+'vol").innerHTML = Math.round(volume*100)+"%"');
 					
 						var source = document.createElement('source');
 						source.src = path+sounds[r][c];
@@ -36,6 +36,7 @@ function create_table() {
 						break;
 						
 					case 4:		// volume
+						cell.setAttribute('class', 'volumepercent');
 						var vol = document.createElement('span');
 						vol.id = 'sound'+r+'vol';
 						cell.appendChild(vol);
