@@ -4,18 +4,17 @@
 
 <head>
 	<title>Sound Player</title>
-	<link rel="stylesheet" href="styles.css">
-	<!-- <script type="text/javascript" src="volume_level.js"></script> -->
+	<link id="pagestyle" rel="stylesheet" href="styles.css">
 	<script type="text/javascript" src="scripts/create_table.js"></script>
 	<script type="text/javascript" src="scripts/fade.js"></script>
-	<script type="text/javascript" src="scripts/background_button.js"></script>
 	<script type="text/javascript" src="sounds.js"></script>
+	<script type="text/javascript" src="scripts/improvement.js"></script>
+	<script type="text/javascript" src="scripts/swapStyle.js"></script>
 </head>
 
 <body onload="create_table()">
-	<h1 class="rainbow">Into the Woods - Sound Effects - Directed by:</h1>
-	<img id="whapham" class="shake" src="images/flaming_text.gif" height= "124" width="328" onclick="changeBG()" style="float:left;"/>
-
+	<h1 class="rainbow">Into the Woods Sound Effects</h1>
+	<img id="whapham" src="images/whapham_head.png" style="display: none;" onclick="swapStyleSheet()">
 	<!-- this table gets all of its stuffing from create_table.js  -->
 </body>
 </html>
