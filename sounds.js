@@ -5,7 +5,7 @@ var sounds =
 	The format below is: page number, dialog or action cue, name of file (must be located in the audio_files folder or the specified path),
 	desired volume, start time (seconds).
 */
-	['Pre-Show',' ','Pre-Show Woods Ambience','preshow.wav','0.8','0'],
+	['Pre-Show',' ','Pre-Show Woods Ambience','preshow.wav','1','0'],
 	['50','Bakers Wife: What I would not give to be in your shoes','Beanstalk Grow 1','rumble.wav','0.8','0'],
 	['75','Applause after it takes two','Hen','chicken.wav','0.4','0'],
 	['94','Jack: She only milks for me','Milky white air','air milky white.wav','0.4','0'],
