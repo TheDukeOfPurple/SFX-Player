@@ -6,8 +6,7 @@ function fadeout(audioId) {
 		var fadeOutInterval = 0.95;
 		if (sound.volume >= 0.01){
 			// this needs to be logarithmic!!!
-			//sound.volume = sound.volume * fadeOutInterval;
-			sound.volume = sound.volume/(Math.log(sound.volume)/Math.log(10));
+			sound.volume = sound.volume * fadeOutInterval;
 		} else {if (sound.volume > 0) {sound.volume = 0;}}
 		
 		// When volume at zero stop interval "loop"
