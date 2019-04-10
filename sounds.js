@@ -5,6 +5,6 @@ var sounds =
 	The format below is: page number, dialog or action cue, name of file (must be located in the audio_files folder or the specified path),
 	desired volume, start time (seconds).
 */
-	['ex. pg. #','ex. script ref.','example name','example.mp3','1','0'],
+	['ex. pg. #','ex. script ref.','example name','sin440Hz-3dbFS3s.wav','1','0'],
 
 ];
