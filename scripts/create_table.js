@@ -71,6 +71,9 @@ function create_table() {
 	for (i = 1; i < sounds.length; i++) {
 		if (sounds[i][2] !== 'Intermission'){
 			var audio = document.getElementById('sound'+i);
+			if (sounds[i][4] == 1) {	// since showing the volume percentage is triggered by a change in volume,
+				audio.volume = .5;	// it won't show 100% unless you change it first. .5 is arbitrary, any floating point would work.
+			}
 			audio.volume = sounds[i][4];
 			audio.currentTime = sounds[i][5];
 		}
