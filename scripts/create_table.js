@@ -13,18 +13,19 @@ function create_table() {
 		var row = document.createElement('tr');
 		var c = 0;	// column iterator - using for loop here is harder to read
 		rowData.forEach(function(cellData) {
-			if (r == 0) {		// table heading
+			if (r == 0) {		// the first row is the table heading
 				var cell = document.createElement('th');
 				cell.appendChild(document.createTextNode(cellData));
 			} else {
 				var cell = document.createElement('td');
 				
-				switch(c) {
+				switch(c) {	//numbered cases are for non-text things, such as the audio player and fadeout buttons
 					case 3:		// audio player
-						var audio = document.createElement('audio');
+						var audio = document.createElement('audio');	// initializes and configures audio player
 						audio.id = 'sound'+r;
 						audio.controls = 'controls';
 						audio.preload = 'auto';
+						// updates the volume percent column when the volume of the player is changed
 						audio.setAttribute('onvolumechange', 'document.getElementById("sound'+r+'vol").innerHTML = Math.round(volume*100)+"%"');
 					
 						var source = document.createElement('source');
