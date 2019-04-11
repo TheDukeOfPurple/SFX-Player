@@ -8,7 +8,6 @@ function fadeout(audioId) {
 	var logMult = (Math.log(.01) / Math.log(originalVol)) / fadeSteps;	// algebra to find the correct exponent
 	var fade = setInterval(function() {	// loops each fade step until done fading out
 		sound.volume = Math.pow(originalVol, logMult*stepsElapsed);
-		console.log(sound.volume);
 		if (stepsElapsed >= fadeSteps) {
 			sound.pause();	// stop playback
 			sound.volume = sounds[audioId][4];	// set the volume back to its predetermined value
