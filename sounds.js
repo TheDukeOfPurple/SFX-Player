@@ -5,6 +5,6 @@ var sounds =
 	The format below is: page number, dialog or action cue, name of effect, name of file (must be located in the audio_files folder or the specified path),
 	desired volume, start time (seconds), fade out duration.
 */
-	['ex. pg. #','ex. script ref.','example name','sin44010sec.wav','1','0', '5'],
+	['ex. pg. #','ex. script ref.','example name','sin44010sec.wav','.75','0', '5'],
 
 ];
